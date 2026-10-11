@@ -116,13 +116,10 @@ document.getElementById("whatsapp").addEventListener("click", () => {
   // Número de teste: substituiremos após autorização da hamburgueria.
  const telefone = "5535998708605";
   
-  if (!telefone) {
-    alert(
-      "Demonstração: o carrinho está funcionando! " +
-      "O WhatsApp será ativado após autorização do estabelecimento."
-    );
-    return;
-  }
+ if (!telefone || !mensagem) {
+  alert("Adicione produtos ao carrinho antes de continuar.");
+  return;
+}
 
   const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
   window.open(url, "_blank", "noopener,noreferrer");
