@@ -777,3 +777,12 @@ nav {
     object-position: center 45%;
     display: block;
 }
+/* MOSTRAR A IMAGEM INTEIRA SEM CORTAR */
+
+.produto .foto-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
