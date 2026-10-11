@@ -110,7 +110,7 @@ document.getElementById("whatsapp").addEventListener("click", () => {
     "",
     `Total demonstrativo: ${formatarPreco(total)}`,
     "",
-    "Pedido gerado por uma demonstração da Black Tech. Confirmar disponibilidade e valores com o estabelecimento."
+    Confirmar disponibilidade e valores com o estabelecimento."
   ].join("\n");
 
   // Número de teste: substituiremos após autorização da hamburgueria.
