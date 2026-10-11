@@ -786,3 +786,12 @@ nav {
     object-position: center;
     display: block;
 }
+.aviso-demo {
+    background: #ff7a00;
+    color: #111;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+}
