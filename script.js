@@ -94,6 +94,14 @@ document.getElementById("whatsapp").addEventListener("click", () => {
     return;
   }
 
+    // MODO DEMONSTRAÇÃO — ENVIO DESATIVADO
+  alert(
+    "🍔 Demonstração Black Tech!\n\n" +
+    "Seu carrinho está funcionando perfeitamente.\n\n" +
+    "O envio de pedidos pelo WhatsApp será ativado " +
+    "após a autorização da Blend Burguer."
+  );
+  return;
   const linhas = carrinho.map((item) =>
     `${item.quantidade}x ${item.nome} — ${formatarPreco(item.preco * item.quantidade)}`
   );
