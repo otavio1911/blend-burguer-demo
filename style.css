@@ -495,7 +495,153 @@ footer strong {
   .total strong {
     font-size: 1.3rem;
   }
+```css
+/* ===== BLEND BURGUER — CORREÇÃO PRETO E LARANJA ===== */
 
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: #080808;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808 !important;
+  color: #f5f5f5;
+}
+
+/* Textos */
+.cardapio,
+.cardapio h2,
+.cardapio h3,
+.cardapio p,
+.produto-info,
+.produto-info p,
+.produto-info strong {
+  color: #f5f5f5;
+}
+
+/* Fundo da seção do cardápio */
+.cardapio {
+  background: #080808 !important;
+}
+
+/* Categorias e destaques */
+.cardapio .etiqueta {
+  color: #ff8a00 !important;
+}
+
+.cardapio h2,
+.cardapio h3 {
+  color: #ff8a00;
+}
+
+/* Avisos e descrições */
+.cardapio .aviso {
+  background: #151515 !important;
+  color: #cfcfcf !important;
+  border: 1px solid #ff8a00;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+/* Grade de produtos */
+.produtos {
+  background: transparent !important;
+}
+
+/* Cartões dos lanches */
+.produto {
+  background: #111111 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* Área das imagens/ícones */
+.produto .foto-placeholder {
+  background: #1b1b1b !important;
+  color: #ff8a00 !important;
+}
+
+/* Área de informações */
+.produto .produto-info {
+  background: #111111 !important;
+  color: #f5f5f5 !important;
+}
+
+.produto .produto-info h3 {
+  color: #ff8a00 !important;
+}
+
+.produto .produto-info p {
+  color: #d0d0d0 !important;
+}
+
+.produto .produto-rodape {
+  background: transparent !important;
+}
+
+.produto .produto-rodape strong {
+  color: #ff8a00 !important;
+}
+
+/* Botões */
+.cardapio .adicionar {
+  background: #ff8a00 !important;
+  color: #080808 !important;
+  border: 1px solid #ff8a00;
+  font-weight: 700;
+}
+
+.cardapio .adicionar:hover {
+  background: #ffa733 !important;
+  color: #080808 !important;
+}
+
+/* Carrinho */
+.carrinho {
+  background: #111111 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #ff8a00;
+  border-radius: 14px;
+}
+
+.carrinho h2,
+.carrinho h3,
+.carrinho .total,
+.carrinho strong {
+  color: #ff8a00;
+}
+
+.carrinho .item-carrinho {
+  background: #181818 !important;
+  color: #f5f5f5 !important;
+}
+
+.carrinho .remover {
+  color: #ff8a00 !important;
+}
+
+/* Evita campos brancos nos navegadores */
+input,
+select,
+textarea {
+  background: #151515 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #ff8a00;
+}
+
+/* Rodapé */
+footer {
+  background: #080808 !important;
+  color: #cfcfcf !important;
+  border-top: 1px solid #ff8a00;
+}
+```
   footer {
     padding: 27px 5%;
   }
