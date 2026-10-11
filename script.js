@@ -114,7 +114,7 @@ document.getElementById("whatsapp").addEventListener("click", () => {
   ].join("\n");
 
   // Número de teste: substituiremos após autorização da hamburgueria.
-  const telefone = "";
+ const telefone = "5535998708605";
   
   if (!telefone) {
     alert(
