@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Demonstração de cardápio digital para hamburgueria.">
+  <title>Blend Burguer | Cardápio Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#inicio">BLEND <span>BURGUER</span></a>
+    <a class="botao botao-pequeno" href="#cardapio">Ver cardápio</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="etiqueta">DEMONSTRAÇÃO • PROJETO BLACK TECH</p>
+      <h1>Seu próximo hambúrguer favorito.</h1>
+      <p>Explore o cardápio e monte seu pedido.</p>
+      <a class="botao" href="#cardapio">EXPLORAR CARDÁPIO ↓</a>
+    </section>
+
+    <section class="cardapio" id="cardapio">
+      <p class="etiqueta">FEITO PARA MATAR A FOME</p>
+      <h2>Nosso cardápio</h2>
+      <p class="aviso">Produtos e valores ilustrativos — não são preços oficiais.</p>
+
+      <div class="produtos">
+        <article class="produto">
+          <div class="foto-placeholder">🍔</div>
+          <div class="produto-info">
+            <h3>Blend Clássico</h3>
+            <p>Pão, carne, queijo e molho especial.</p>
+            <div class="produto-rodape">
+              <strong>R$ 24,90</strong>
+              <button class="botao adicionar" type="button"
+                data-nome="Blend Clássico" data-preco="24.90">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto">
+          <div class="foto-placeholder">🍔</div>
+          <div class="produto-info">
+            <h3>Blend Duplo</h3>
+            <p>Dois discos de carne e queijo derretido.</p>
+            <div class="produto-rodape">
+              <strong>R$ 32,90</strong>
+              <button class="botao adicionar" type="button"
+                data-nome="Blend Duplo" data-preco="32.90">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="produto">
+          <div class="foto-placeholder">🍔</div>
+          <div class="produto-info">
+            <h3>Blend Bacon</h3>
+            <p>Hambúrguer artesanal com bacon crocante.</p>
+            <div class="produto-rodape">
+              <strong>R$ 29,90</strong>
+              <button class="botao adicionar" type="button"
+                data-nome="Blend Bacon" data-preco="29.90">
+                + Adicionar
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="carrinho" id="carrinho">
+      <p class="etiqueta">SEU PEDIDO</p>
+      <h2>Meu carrinho <span id="quantidade">(0 itens)</span></h2>
+      <div id="itens-carrinho">
+        <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+      </div>
+      <div class="total">
+        <span>Total demonstrativo</span>
+        <strong id="total">R$ 0,00</strong>
+      </div>
+      <button class="botao botao-largo" id="whatsapp" type="button">
+        Continuar pelo WhatsApp
+      </button>
+      <button class="botao botao-pagamento botao-largo" id="pagamento" type="button">
+        Pagamento online (demonstração)
+      </button>
+      <p class="aviso">Nenhum pagamento será realizado nesta demonstração.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto demonstrativo desenvolvido pela <strong>Black Tech</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
