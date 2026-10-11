@@ -325,6 +325,37 @@ footer strong {
   .foto-placeholder {
     min-height: 180px;
   }
+  
+.item-carrinho {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.item-carrinho strong {
+  color: #ffc04a;
+  white-space: nowrap;
+}
+
+.remover {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .item-carrinho {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .item-carrinho .remover {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
 
   .produto-info {
     padding: 20px;
